@@ -1,0 +1,272 @@
+/* ==== BOILER PLATE START ==== */
+@charset "utf-8";
+@import url("../fonts/fonts.css");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    line-height: 1.5;
+    font-family: 'Museo Sans Rounded 300';  
+}
+
+html{
+    font-size: 1em;
+}
+
+img{
+    width:100%;
+    height:100%;
+    display:block;
+}
+/* ==== BOILER PLATE END ==== */
+
+/* ==== HEADER / NAVBAR ==== */
+
+.forside__header{
+    background-image: url(../images/design/index-speakers.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.534);
+    display: flex;
+    padding: 1% 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__item {
+    color: #999999;
+    font-size: 2em;
+    margin-right: 2%;
+}
+
+.subscribe-box {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    color: white;
+    font-size: 0.75em;
+    background-color: #1795f1;
+    border-radius: 3px;
+    padding: 0.5rem;
+    height: 20px;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+.navbar{
+    background-color: black;
+    height: 50px;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+}
+
+.list__link{
+    color: white;
+    text-decoration: none;
+    font-size: 0.6em;
+    font-weight: bold;
+}
+
+.list__link_active, .list__link:hover{
+    color: #a39161;
+}
+
+.forside__logo{
+    max-width: 10em;
+    margin: auto;
+    height: 180px;
+    margin-top: 90px;
+}
+
+/* ==== MAIN INDHOLD FORSIDE ====*/
+
+.showroom{
+    background-image: url(../images/design/forside_showroom_baggrund.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.showroom__header{
+    padding-top: 65px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.slider{
+    position: relative;
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.slider__box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.slider__item{
+    display: none;
+}
+
+.slider__item.active{
+    display: block;
+}
+
+.slider__img{
+    width: 700px;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.slider__text{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 2rem;
+    left: 0;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.slider__buttons_right, .slider__buttons_left{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    font-size: 50px;
+    top: 50%;
+    cursor: pointer;
+    margin-top: -20px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+}
+
+.slider__buttons_left{
+    left: 30px;
+}
+
+.slider__buttons_right{
+    right: 30px;
+}
+
+.some{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.some__box{
+    position: relative;
+}
+
+.some__icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 7em;
+}
+
+.info{
+    background-color: black;
+    height: 230px;
+}
+
+.info__boxes{
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding-top: 60px;
+}
+
+.info__box{
+    text-align: center;
+}
+
+.info__link{
+    text-decoration: none;
+    color: #a39161;
+    border: white solid 0.3px;
+    padding: 2px 10px;
+    font-weight: bold;
+}
+
+.info__text{
+    color: white;
+    font-size: 0.9em;
+    padding: 10px;
+}
+
+/* ==== MAIN INDHOLD FORSIDE END ====*/
+
+/* ==== FOOTER ====*/
+
+.footer{
+    background-color: #a39161;
+    padding: 1%;
+    display: flex;
+}
+
+.footer-container{
+    margin-right: 3%;
+}
+
+.footer-container__text{
+    color: #2a2f2d;
+    line-height: 1;
+}
+
+.footer-text{
+    color: #FFF;
+    padding: 10px; 
+}
+
+.footer-container2{
+    display: flex;
+    margin-left:  auto;
+}
+
+.footer-container__icon{ 
+    color: #FFF;
+    padding: 3px;
+}
+
+.fab{
+    line-height: 1.5;
+    font-size: 1.5em;
+}
+
+.footer__link{
+    text-decoration-color: white;
+}

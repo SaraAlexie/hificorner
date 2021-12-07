@@ -1,4 +1,5 @@
 # **Projektopgave HI-FI Corner**
+First group project. Finished in March of 2021.
 
 # **[Link til sitet](https://rts-cmk-wu05.github.io/hificorner-team-power/sitet/)**
 

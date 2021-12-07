@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hifi Corner / Shop / Inventory</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="input"><input type="text" class="input__search" placeholder="Search entire store here..."><i class="fas fa-search input__icon"></i></div>
+        <p class="header__option"><i class="fas fa-user"></i> ACCOUNT</p>
+        <p class="header__option"><i class=" fas fa-shopping-cart "></i> CART</p>
+        <i class="fas fa-map-marker-alt header__item "></i>
+        <i class="fas fa-phone header__item "></i>
+        <i class="fas fa-envelope header__item "></i>
+    </header>
+    <nav class="navbar">
+        <ul class="list">
+            <li class="list__item">
+                <a href="index.html" class="list__link">HOME</a>
+            </li>
+            <li class="list__item">
+                <a href="#" class="list__link">ABOUT US</a>
+            </li>
+            <li class="list__item">
+                <a href="brands_siden.html" class="list__link">BRANDS</a>
+            </li>
+            <li class="list__item">
+                <a href="#" class="list__link">BLOG</a>
+            </li>
+            <li class="list__item">
+                <a href="#" class="list__link">EVENTS</a>
+            </li>
+            <li class="list__item">
+                <a href="kategori-grid_siden.html" class="list__link list__link_active">SHOP</a>
+            </li>
+            <li class="list__item">
+                <a href="#" class="list__link">CONTACT US</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="background-color">
+        <main class="main">
+
+
+            <div class="left-navigation__container">
+                <div class="container__kategori">
+                    <a class="text__item text__item-color" href="index.html">HOME</a>
+                    <p class="text__item">/</p>
+                    <p id="path-title" class="text__item">All products</p>
+                </div>
+
+                <div class="container__produkt-kategorier">
+                    <a href="produktlager.html?category=cd players" class="kategorier__produktkategori">CD Players</a>
+                    <a href="produktlager.html?category=dvd players" class="kategorier__produktkategori">DVD Players</a>
+                    <a href="produktlager.html?category=power amplifiers" class="kategorier__produktkategori">Power Amplifiers</a>
+                    <a href="produktlager.html?category=preamplifiers" class="kategorier__produktkategori">Preamplifiers</a>
+                    <a href="produktlager.html?category=speakers" class="kategorier__produktkategori">Speakers</a>
+                    <a href="produktlager.html?category=integrated amplifiers" class="kategorier__produktkategori">Integrated Amplifiers</a>
+                    <a href="produktlager.html?category=turnables" class="kategorier__produktkategori">Turnables</a>
+                    <a href="produktlager.html?category=tube amplifiers" class="kategorier__produktkategori">Tube Amplifiers</a>
+                    <a href="produktlager.html" class="kategorier__produktkategori">View all products</a>
+                </div>
+
+                <div class="container__price-manufacturers">
+                    <h3 class="price-manufacturers__h3">SHOP BY</h3>
+                    <h4 class="price-manufacturers__h4">Filter</h4>
+
+                    <div class="container__price">
+                        <h4 class="price__h4">PRICE</h4>
+                        <p class="price__item">£300-£400</p>
+                        <p class="price__item">£400-£500</p>
+                        <p class="price__item">£500-£600</p>
+                        <p class="price__item">£600-£700</p>
+                        <p class="price__item">£700-£800</p>
+                        <p class="price__item">£800-£900</p>
+                        <p class="price__item">£900-£1000</p>
+                    </div>
+
+                    <div class="container__manufacturer">
+                        <h4 class="manufacturer__h4">MANUFACTURERS</h4>
+                        <p class="manufacturer__item">Manley (5)</p>
+                        <p class="manufacturer__item">Parasound (5)</p>
+                        <p class="manufacturer__item">Creek (9)</p>
+                        <p class="manufacturer__item">Exposure (1)</p>
+                        <p class="manufacturer__item">Pro-ject (6)</p>
+                        <p class="manufacturer__item">Bösendorfer (1)</p>
+                        <p class="manufacturer__item">Epos (1)</p>
+                        <p class="manufacturer__item">Harbeth (3)</p>
+                        <p class="manufacturer__item">Jolida (5)</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="shop__container">
+                <h1 class="title">All products</h1>
+
+                <div class="central-navigation__container">
+                    <div class="sort-by__container">
+                        <label class="label">SORT BY:</label>
+                        <select id="sortBy" class="option">
+                <option class="option__item">alphabetical order</option>
+                <option class="option__item">price ascending</option>
+                <option class="option__item">price descending</option>
+            </select>
+                        <i class="fas fa-long-arrow-alt-up option__arrow"></i>
+                    </div>
+                    <p class="banner__item">133 Item(s)</p>
+                    <div class="show__container">
+                        <label class="label">SHOW:</label>
+                        <select id="show" class="option">
+                <option class="option__item">All</option>
+                <option class="option__item">10</option>
+                <option class="option__item">20</option>
+                <option class="option__item">30</option>
+            </select>
+                    </div>
+                </div>
+
+
+                <div id="products__container" class="products__container">
+
+                </div>
+            </div>
+
+            <div class="list__container">
+                <h4 class="manufacturer__title">MANUFACTURER</h4>
+                <ul class="manufacturer__list">
+                    <li class="manufacturer__name">Manley</li>
+                    <li class="manufacturer__name">Parasound</li>
+                    <li class="manufacturer__name">Creek</li>
+                    <li class="manufacturer__name">Exposure</li>
+                    <li class="manufacturer__name">Pro-ject</li>
+                    <li class="manufacturer__name">Bösendorfer</li>
+                    <li class="manufacturer__name">Epos</li>
+                    <li class="manufacturer__name">Harbeth</li>
+                    <li class="manufacturer__name">Jolida</li>
+                </ul>
+                <p class="manufacturer__view-all">View All</p>
+            </div>
+
+
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-container__text">Hi-Fi Corner</p>
+            <p class="footer-container__text">Edinburg 2 Joppa Road EH15 2EU</p>
+            <p class="footer-container__text">Falkirk 44 Cow Wynd FK1 1PU</p>
+        </div>
+        <a class="footer__link" href="#">
+            <p class="footer-text">Returns & Refunds</p>
+        </a>
+        <p class="footer-text">|</p>
+        <a class="footer__link" href="#">
+            <p class="footer-text">Privacy Policy</p>
+        </a>
+        <div class="footer-container2">
+            <div class="footer-container__icon"><i class="fab fa-cc-mastercard"></i></div>
+            <div class="footer-container__icon"><i class="fab fa-cc-visa"></i></div>
+            <div class="footer-container__icon"><i class="fab fa-cc-paypal"></i></div>
+            <div class="footer-container__icon"><i class="fab fa-cc-jcb"></i></div>
+            <div class="footer-container__icon"><i class="fab fa-facebook"></i></div>
+            <div class="footer-container__icon"><i class="fab fa-youtube"></i></div>
+            <div class="footer-container__icon"><i class="fab fa-twitter"></i></div>
+            <div class="footer-container__icon"><i class="fab fa-instagram"></i></div>
+        </div>
+    </footer>
+    <script src="js/produktlager.js"></script>
+</body>
